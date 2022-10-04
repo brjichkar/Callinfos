@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1090246184902",
+    "project_id": "callinfos-9a450",
+    "storage_bucket": "callinfos-9a450.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090246184902:android:2180d4a8169004b4f8acc7",
+        "android_client_info": {
+          "package_name": "com.neotrick.callinfos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090246184902-t8gjb4890vc61ehps8pkgou79p1mdt2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neotrick.callinfos",
+            "certificate_hash": "b3ec9cc4964a343c54b21998750aa63b24e0905c"
+          }
+        },
+        {
+          "client_id": "1090246184902-jka9tkn3u3gevevegijkurn85tp01pq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiJxI7BS4m8PO_lGkmTUB5f0rLmgBlxqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090246184902-jka9tkn3u3gevevegijkurn85tp01pq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

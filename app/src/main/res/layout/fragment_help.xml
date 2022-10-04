@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bag_image"
+
+    tools:context=".home_section.help_section.HelpFragment">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_calls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:foregroundGravity="center"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:id="@+id/ll_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/iv_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_work_history" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/iv_history"
+                        android:gravity="center"
+                        android:text="Old History"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_logo"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.20"
+                    android:text="How May I Help You...?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18ssp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/message"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center">
+
+
+                    <EditText
+                        android:id="@+id/idEdtcomplaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="start"
+                        android:hint="Type Message"
+                        android:importantForAutofill="no"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/idBtnsubmit"
+                    android:layout_width="@dimen/_160sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/rounded_corner_button"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_17sdp" />
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/rl_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/iv_webview"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:src="@drawable/website_icon" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_toRightOf="@+id/iv_webview"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="Logout"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_14sdp" />
+    </RelativeLayout>
+
+</RelativeLayout>

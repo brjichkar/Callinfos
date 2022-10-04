@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home_section.help_section.HistoryFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_calls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_incoming"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="sans-serif"
+                android:text="11:39 pm"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_8ssp" />
+
+            <RelativeLayout
+                android:id="@+id/rls_incoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_user_time"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/reply_mesage_background">
+
+                <TextView
+                    android:id="@+id/incoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="Hi , I am facing and issue with my app and not sure it how it will get resolve"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_reply_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rls_incoming"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="sans-serif"
+                android:text="11:39 pm"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_8ssp" />
+
+            <TextView
+                android:id="@+id/outgoing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_reply_time"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/user_message_background"
+                android:gravity="start"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="Hi , I am facing and issue with my app and not sure it how it will get resolve"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
